@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #d5001c;
+  --color-brand-secondary: #000000;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0b0b0b] text-white antialiased;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10;
+  }
+
+  .porsche-btn {
+    @apply px-8 py-3 bg-white text-black font-bold uppercase tracking-widest text-xs hover:bg-[#d5001c] hover:text-white transition-all duration-300;
+  }
+
+  .porsche-btn-outline {
+    @apply px-8 py-3 border border-white text-white font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all duration-300;
+  }
+}
